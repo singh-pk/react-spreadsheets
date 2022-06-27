@@ -1,0 +1,82 @@
+{
+  "name": "react-spreadsheets",
+  "version": "0.0.0-development",
+  "description": "A lightweight, fully customizable, feature rich spreadsheet component for React",
+  "main": "./build/index",
+  "typings": "./build/index.d.ts",
+  "types": "./build/index.d.ts",
+  "homepage": "https://github.com/singh-pk/react-spreadsheets#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singh-pk/react-spreadsheets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/singh-pk/react-spreadsheets/issues"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "react spreadsheet",
+    "react excel",
+    "react datagrid",
+    "react spreadsheet component",
+    "react spreadsheets",
+    "react-datagrid",
+    "react-spreadsheets",
+    "react-spreadsheet"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "semantic-release": "semantic-release --branches main",
+    "commit": "git add . && git-cz"
+  },
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "main"
+    ]
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "author": "singh-pk <pksn1111@gmail.com> (https://github.com/singh-pk)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "semantic-release": "^19.0.3",
+    "terser-webpack-plugin": "^5.1.4",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
